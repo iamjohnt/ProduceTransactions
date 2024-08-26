@@ -16,7 +16,7 @@ public class TransactionGenerator {
             "10101010"
     };
 
-    private Transaction generateRandomTransaction() {
+    public Transaction generateRandomTransaction() {
         String uid = uidPool[randInt(0, uidPool.length - 1)];
         Double value = randDoubleInclusive(minTrans, maxTrans);
         return new Transaction(uid, value);
