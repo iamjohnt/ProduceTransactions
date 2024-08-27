@@ -15,7 +15,7 @@ public class Scheduler {
     @Autowired
     TransactionKafkaSender sender;
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 1000)
     public void schedule() {
         this.generateAndSendTransaction();
     }
